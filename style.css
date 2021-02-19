@@ -1,0 +1,218 @@
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Varela+Round&display=swap');
+
+/* CSS for body */
+
+body{
+    margin: 0px;
+    background-color: royalblue;
+}
+
+/* Styling Font For Everything */
+
+*{
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+*:focus{
+    outline: none;
+}
+
+
+/* Styling Link's Text decoration    */
+
+a{
+    text-decoration: none;
+}
+
+/* Styling Navigation Bar */
+
+/* Topmost heading */
+
+.tophead{
+    background-color: rgba(241, 246, 250, 0.932);
+    height: 50px;
+    font-size: 2em;
+    font-weight: 900;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Header Title */
+
+#pagetitle{
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+/* Navigation Bar  */
+
+#header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: rgba(241, 246, 250, 0.932);
+    
+}
+
+
+/* mobile navigation bar set to none while on desktop */
+
+#mobilenav{
+    display: none;
+}
+
+/* Styling Navigation Items */
+
+.nav-items{
+    padding: 0px 5px;
+    color: rgb(48, 48, 48);
+}
+/* Navigation Items on Hover */
+.nav-items:hover{
+    color: rgb(80, 80, 80);
+}
+
+/* Styling article area */
+
+#main{
+    display: flex;
+    background-color: white;
+    margin: 0px 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.section{   
+    padding: 3px;
+    margin: 5px 90px;
+    width: 55%;
+}
+#ultext{
+    font-size: 0.7em;
+}
+
+/* Styling Form Area */
+
+#form{
+    position: relative;
+    margin-bottom: 60px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling Form */
+.input{
+    position: relative;
+}
+input{
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    margin: 5px;
+    display: block;
+    background-color: white;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    width: 49%;
+}
+
+/* styling back to top button  */
+
+#backtotop{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: royalblue;
+    color: white;
+}
+
+#button{
+    width: 232px;
+    margin: 5px;
+}
+
+/* Styling icons */
+
+.name-form{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+/* Styling Copyright Section */
+
+#copyright{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.copy{
+    padding: 3px 5px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#special{
+    font-family: Sriracha,cursive;
+    color: white;
+}
+#special:hover{
+    color: rgb(238, 220, 220);
+}
+#heart{
+    color: red;
+}
+
+/* Firing Media Query For screens Below 550px */
+
+@media only Screen and (max-width:550px){
+    
+    #backto{
+        display: none;
+    }
+    .section{
+        margin: 5px 10px;
+        width: 100%;
+    }
+}
+@media only Screen and (max-width:400px){
+    #header{
+        flex-direction: column;
+        height: 65px;
+    }
+    #desknav{
+        display: none;
+    }
+    #mobilenav{
+        display: block;
+    }
+    .tophead{
+        height: 80px;
+        padding-top: 3px;
+    }
+    h2, h3{
+        text-align: center;
+    }
+}
